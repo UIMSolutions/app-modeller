@@ -21,6 +21,7 @@ public import langs.javascript;
 public {
   import apps.modeller.controllers;
   import apps.modeller.helpers;
+  import apps.modeller.routers;
   import apps.modeller.tests;
   import apps.modeller.views;
 }
@@ -30,6 +31,6 @@ static this() {
   modellerApp = App
     .name("modellerApp")
     .rootPath("/apps/modeller")
-    .addRoute(Route("", HTTPMethod.GET, MODIndexPageController));
+    .addRoute(Route("", HTTPMethod.GET, MODIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, MODIndexPageController));
 }

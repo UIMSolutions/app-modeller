@@ -1,4 +1,7 @@
-module apps.modeller.controllers;
+module apps.myname.controllers;
 
-@safe:
-import apps.modeller;
+public { // Packages
+  import apps.myname.controllers.actions;
+  import apps.myname.controllers.components;
+  import apps.myname.controllers.pages;
+}
