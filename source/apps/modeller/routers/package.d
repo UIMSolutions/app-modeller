@@ -1,4 +1,1 @@
-module apps.modeller.routers;
-
-@safe:
-import apps.modeller;
+module apps.myname.routers;
