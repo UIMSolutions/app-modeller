@@ -1,16 +1,16 @@
-module apps.myname.controllers.pages.index;
+module apps.modeller.controllers.pages.index;
 
-import apps.myname;
+import apps.modeller;
 @safe:
 
-class DMYNAMEIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEIndexPageController"));
+class DmodellerIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("modellerIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEIndexView(this));
+      .view(modellerIndexView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEIndexPageController"));
+mixin(ControllerCalls!("modellerIndexPageController"));

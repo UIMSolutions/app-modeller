@@ -1,1 +1,1 @@
-module apps.myname.controllers.actions;
+module apps.modeller.controllers.actions;

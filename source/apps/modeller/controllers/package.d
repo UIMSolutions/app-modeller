@@ -1,7 +1,7 @@
-module apps.myname.controllers;
+module apps.modeller.controllers;
 
 public { // Packages
-  import apps.myname.controllers.actions;
-  import apps.myname.controllers.components;
-  import apps.myname.controllers.pages;
+  import apps.modeller.controllers.actions;
+  import apps.modeller.controllers.components;
+  import apps.modeller.controllers.pages;
 }

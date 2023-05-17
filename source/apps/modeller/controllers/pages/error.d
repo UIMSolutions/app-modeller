@@ -1,16 +1,16 @@
-module apps.myname.controllers.pages.error;
+module apps.modeller.controllers.pages.error;
 
-import apps.myname;
+import apps.modeller;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DmodellerErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("modellerErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(modellerErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("modellerErrorPageController"));

@@ -1,1 +1,1 @@
-# Package 📦 apps.myname.controllers.components
+# Package 📦 apps.modeller.controllers.components
