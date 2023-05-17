@@ -29,7 +29,7 @@ public {
 DApp modellerApp;
 static this() {
   modellerApp = App
-    .name("modellerApp")
+    .name("MODellerApp")
     .rootPath("/apps/modeller")
     .addRoute(Route("", HTTPMethod.GET, MODIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, MODIndexPageController));

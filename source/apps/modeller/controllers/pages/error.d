@@ -3,8 +3,8 @@ module apps.modeller.controllers.pages.error;
 import apps.modeller;
 @safe:
 
-class DmodellerErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("modellerErrorPageController"));
+class DMODErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("MODellerErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -13,4 +13,4 @@ class DmodellerErrorPageController : DAPPPageController {
       .view(modellerErrorView(this));
   }
 }
-mixin(ControllerCalls!("modellerErrorPageController"));
+mixin(ControllerCalls!("MODellerErrorPageController"));

@@ -3,15 +3,15 @@ module apps.modeller.views.error;
 import apps.modeller;
 @safe:
 
-class DmodellerErrorView : DView {
-  mixin(ViewThis!("modellerErrorView"));
+class DMODErrorView : DView {
+  mixin(ViewThis!("MODellerErrorView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
   }
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DmodellerErrorView~":DmodellerErrorView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DMODErrorView~":DMODErrorView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -19,4 +19,4 @@ class DmodellerErrorView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("modellerErrorView"));
+mixin(ViewCalls!("MODellerErrorView"));
