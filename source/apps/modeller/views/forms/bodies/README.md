@@ -1,3 +1,3 @@
-# Package 📦 apps.myname.views.forms.bodies
+# Package 📦 apps.modeller.views.forms.bodies
 
 

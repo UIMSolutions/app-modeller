@@ -1,18 +1,18 @@
-module apps.myname.views.index;
+module apps.modeller.views.index;
 
-import apps.myname;
+import apps.modeller;
 @safe:
 
-class DMYNAMEIndexView : DView {
-  mixin(ViewThis!("MYNAMEIndexView"));
+class DmodellerIndexView : DView {
+  mixin(ViewThis!("modellerIndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DMYNAMEIndexView~":DMYNAMEIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DmodellerIndexView~":DmodellerIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
-      H5Div("APP myname -> Error")
+      H5Div("APP modeller -> Error")
     ].toH5;
   }
 }
-mixin(ViewCalls!("MYNAMEIndexView"));
+mixin(ViewCalls!("modellerIndexView"));

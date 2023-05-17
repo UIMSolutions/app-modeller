@@ -1,10 +1,10 @@
-module apps.myname.views;
+module apps.modeller.views;
 
 public {
-  import apps.myname.views.components;
-  import apps.myname.views.forms;
-  import apps.myname.views.pages;
+  import apps.modeller.views.components;
+  import apps.modeller.views.forms;
+  import apps.modeller.views.pages;
 }
 
-public import apps.myname.views.error;
-public import apps.myname.views.index;
+public import apps.modeller.views.error;
+public import apps.modeller.views.index;
