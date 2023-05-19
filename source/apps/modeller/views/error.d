@@ -4,7 +4,7 @@ import apps.modeller;
 @safe:
 
 class DMODErrorView : DView {
-  mixin(ViewThis!("MODellerErrorView"));
+  mixin(ViewThis!("MODErrorView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
@@ -15,8 +15,8 @@ class DMODErrorView : DView {
     super.toH5(options);
 
     return [
-      H5Div("APP modeller -> Error")
+      H5Div("APP Modeller -> Error")
     ].toH5;
   }
 }
-mixin(ViewCalls!("MODellerErrorView"));
+mixin(ViewCalls!("MODErrorView"));

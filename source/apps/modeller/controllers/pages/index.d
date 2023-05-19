@@ -4,13 +4,13 @@ import apps.modeller;
 @safe:
 
 class DMODIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MODellerIndexPageController"));
+  mixin(ControllerThis!("MODIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(modellerIndexView(this));
+      .view(MODIndexView(this));
   }
 }
-mixin(ControllerCalls!("MODellerIndexPageController"));
+mixin(ControllerCalls!("MODIndexPageController"));

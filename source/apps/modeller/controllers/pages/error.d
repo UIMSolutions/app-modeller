@@ -4,13 +4,13 @@ import apps.modeller;
 @safe:
 
 class DMODErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MODellerErrorPageController"));
+  mixin(ControllerThis!("MODErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(modellerErrorView(this));
+      .view(MODErrorView(this));
   }
 }
-mixin(ControllerCalls!("MODellerErrorPageController"));
+mixin(ControllerCalls!("MODErrorPageController"));

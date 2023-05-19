@@ -4,7 +4,7 @@ import apps.modeller;
 @safe:
 
 class DMODIndexView : DView {
-  mixin(ViewThis!("MODellerIndexView"));
+  mixin(ViewThis!("MODIndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
     debugMethodCall(moduleName!DMODIndexView~":DMODIndexView("~this.name~")::toH5");
@@ -15,4 +15,4 @@ class DMODIndexView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("MODellerIndexView"));
+mixin(ViewCalls!("MODIndexView"));
