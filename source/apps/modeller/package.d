@@ -26,11 +26,11 @@ public {
   import apps.modeller.views;
 }
 
-DApp modellerApp;
 static this() {
-  modellerApp = App
-    .name("MODellerApp")
+  AppRegistry.register(  
+    App
+    .name("modellerApp")
     .rootPath("/apps/modeller")
     .addRoute(Route("", HTTPMethod.GET, MODIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, MODIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, MODIndexPageController)));
 }
