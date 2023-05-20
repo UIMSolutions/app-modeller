@@ -27,7 +27,7 @@ public {
 }
 
 static this() {
-  AppRegistry.register(  
+  AppRegistry.register("apps.modeller",  
     App
     .name("modellerApp")
     .rootPath("/apps/modeller")
