@@ -3,7 +3,7 @@ module apps.modeller.controllers.pages.index;
 import apps.modeller;
 @safe:
 
-class DMODIndexPageController : DAPPPageController {
+class DMODIndexPageController : DPageController {
   mixin(ControllerThis!("MODIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
