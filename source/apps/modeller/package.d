@@ -31,7 +31,7 @@ static this() {
     App
     .name("modellerApp")
     .rootPath("/apps/modeller")
-                       .importTranslations()
+    .importTranslations()
     .addRoute(Route("", HTTPMethod.GET, MODIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, MODIndexPageController)));
 }
