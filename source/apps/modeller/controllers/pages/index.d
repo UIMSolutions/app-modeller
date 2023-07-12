@@ -3,8 +3,8 @@ module apps.modeller.controllers.pages.index;
 import apps.modeller;
 @safe:
 
-class DMODIndexPageController : DPageController {
-  mixin(ControllerThis!("MODIndexPageController"));
+class DIndexPageController : DPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -13,4 +13,4 @@ class DMODIndexPageController : DPageController {
       .view(MODIndexView(this));
   }
 }
-mixin(ControllerCalls!("MODIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));

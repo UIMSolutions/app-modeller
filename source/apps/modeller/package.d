@@ -29,7 +29,7 @@ public {
 static this() {
   AppRegistry.register("apps.modeller",  
     App("modellerApp", "/apps/modeller")
-    .importTranslations()
+      .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
         Route("/", HTTPMethod.GET, IndexPageController)
