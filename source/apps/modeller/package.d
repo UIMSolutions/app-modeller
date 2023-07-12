@@ -28,10 +28,11 @@ public {
 
 static this() {
   AppRegistry.register("apps.modeller",  
-    App
-    .name("modellerApp")
-    .rootPath("/apps/modeller")
+    App("modellerApp", "/apps/modeller")
     .importTranslations()
-    .addRoute(Route("", HTTPMethod.GET, MODIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, MODIndexPageController)));
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
